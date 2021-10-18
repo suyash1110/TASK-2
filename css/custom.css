@@ -1,0 +1,362 @@
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 40px;
+  position: relative;
+}
+
+#content {
+  padding-bottom: 40px;
+}
+
+ul.nav,
+.jumbotron h1 {
+  font-family: 'Ranchers', cursive;
+}
+
+.navbar-inverse {
+  background-color: black;
+  border-color: black;
+}
+
+ul.nav {
+  font-size: 13px;
+}
+
+.ranchers {
+  font-family: 'Ranchers', cursive;
+}
+
+.quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+  background-color: #f74c3c;
+  padding: 25px 0;
+  color: lightyellow;
+}
+
+#favourites {
+  background-color: #f5f5f5;
+}
+
+#avatar {
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.jumbotron.main-header {
+  background-image: url('../images/wal.png');
+  background-color: black;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 550px;
+  color: lightyellow;
+}
+
+.jumbotron h1 {
+  font-size: 56px;
+  text-shadow: 2px 4px 5px black;
+  margin: auto 70px;
+}
+
+.jumbotron p {
+  opacity: 1;
+  margin-bottom: 30px;
+  font-weight: 100;
+  padding: 0 50px;
+}
+
+.btn-lg {
+  font-size: 28px;
+}
+
+.homepage {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.homepage h2,
+.homepage h3 {
+  color: #e74c3c;
+  font-family: 'Ranchers', cursive;
+  text-transform: uppercase;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.homepage h2 {
+  font-size: 30px;
+}
+
+.homepage h3 {
+  font-size: 26px;
+}
+
+.homepage p {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.homepage a {
+  color: #e74c3c;
+}
+
+.homepage a:hover {
+  color: #e74c3c;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.homepage hr {
+  border-top: 1px solid #e74c3d;
+  width: 160px;
+  margin-top: 15px;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1199px) {
+  .jumbotron.main-header {
+    height: 500px;
+  }
+  .jumbotron h1 {
+    font-size: 56px;
+    margin: auto 50px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .jumbotron.main-header {
+    height: 400px;
+  }
+  .jumbotron h1 {
+    font-size: 44px;
+    margin: auto 40px;
+  }
+  .jumbotron p {
+    padding: 0 10px;
+  }
+  #favourites .col-md-4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .jumbotron.main-header {
+    height: 200px;
+  }
+  .jumbotron h1 {
+    font-size: 24px;
+    margin: auto 20px;
+  }
+  .jumbotron p {
+    font-size: 16px;
+    padding: 0;
+  }
+  .btn-lg {
+    font-size: 18px;
+  }
+  .homepage p {
+    font-size: 18px;
+  }
+  .logo {
+    font-size: 16px;
+  }
+}
+
+img.book_list {
+  max-height: 350px;
+}
+
+.book img {
+  max-height: 290px;
+  float: right;
+  padding: 20px 25px;
+  border: 10px solid #e74c3d;
+  box-shadow: 1px 1px 2px grey;
+  padding: 0;
+  margin: 10px;
+}
+
+.book h1 {
+  color: #e74c3c;
+}
+
+.book p {
+  padding: 20px 0;
+  text-align: justify;
+  font-size: 18px;
+}
+
+#toTop {
+  position: fixed;
+  display: none;
+  background-color: #000;
+  border: none;
+  bottom: 10px;
+  padding: 5px 15px;
+  right: 5px;
+  font-size: 38px;
+}
+
+.container.book {
+  margin-top: 80px;
+}
+
+/************************************************************
+*************************Footer******************************
+*************************************************************/
+
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+
+.footer a {
+  color: white;
+  font-weight: normal;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.title-widget {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  position: relative;
+  font-family: 'Ranchers', cursive;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
+  margin-left: 0;
+  padding-left: 28px;
+}
+
+.title-widget::before {
+  background-color: #ea5644;
+  content: '';
+  height: 22px;
+  left: 0px;
+  position: absolute;
+  top: -2px;
+  width: 5px;
+}
+
+.widget_nav_menu ul {
+  list-style: outside none none;
+  padding-left: 0;
+}
+
+.widget_archive ul li {
+  background-color: rgba(0, 0, 0, 0.3);
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  width: 3px;
+}
+
+.widget_nav_menu ul li {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  position: relative;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 7px;
+  padding-bottom: 7px;
+  width: 95%;
+}
+
+.title-median {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+#social:hover {
+  transform: scale(1.1);
+}
+
+#social {
+  transform: scale(0.8);
+  transition-duration: 0.5s;
+}
+
+.social-fb:hover {
+  color: #3b5998;
+}
+.social-tw:hover {
+  color: #4099ff;
+}
+.social-gp:hover {
+  color: #d34836;
+}
+.social-em:hover {
+  color: #f39c12;
+}
+.nomargin {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-bottom {
+  background-color: #000;
+  min-height: 30px;
+  width: 100%;
+}
+.copyright {
+  color: #fff;
+  line-height: 30px;
+  min-height: 30px;
+  padding: 7px 0;
+}
+.design {
+  color: #fff;
+  line-height: 30px;
+  min-height: 30px;
+  padding: 7px 0;
+  text-align: right;
+}
+.design a {
+  color: #fff;
+}
+
+/************************************************************
+*************************Footer******************************
+*************************************************************/
